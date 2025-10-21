@@ -8,6 +8,8 @@ export default function Home() {
         <Link href="/sobre">Sobre</Link>
         <Link href="/teste/post">Teste</Link>
         <Link href="/posts">Posts</Link>
+        {/* <Link href="/exemplo?parametro=abc">Exemplo</Link> */}
+        <Link href="/exemplo?slug=lugar-diferente">Exemplo</Link>
       </main>
     </div>
   );
