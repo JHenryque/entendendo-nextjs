@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 export default function PostsPage() {
   const postsIds = [
@@ -13,6 +16,14 @@ export default function PostsPage() {
     },
   ];
 
+  const sair = false;
+
+  function sairDoSistema() {
+    if (!sair) {
+      redirect("/");
+    }
+  }
+
   return (
     <div>
       <h1>PostsPages</h1>
@@ -22,6 +33,7 @@ export default function PostsPage() {
             <Link href={`/posts/${post.id}`}>Post {post.id}</Link>
           </li>
         ))}
+        <button onClick={sairDoSistema}>Sair</button>
       </ul>
     </div>
   );

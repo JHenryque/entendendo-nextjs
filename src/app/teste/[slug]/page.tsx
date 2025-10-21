@@ -1,6 +1,5 @@
 import BotaoRedirect from "@/components/BotaoRedirect";
 import { Metadata } from "next";
-import Link from "next/link";
 
 type TestProps = {
   params: { slug: number };
