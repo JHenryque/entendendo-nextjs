@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.active {
+  border-bottom: 2px solid var(--foreground);
+  padding: 1.2rem 0;
+  display: block;
+}
