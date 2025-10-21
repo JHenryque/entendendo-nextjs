@@ -10,6 +10,7 @@ export default function Home() {
         <Link href="/posts">Posts</Link>
         {/* <Link href="/exemplo?parametro=abc">Exemplo</Link> */}
         <Link href="/exemplo?slug=lugar-diferente">Exemplo</Link>
+        <Link href="/produtos/produto/items/uma-caixa-de-cafe">Produtos</Link>
       </main>
     </div>
   );
