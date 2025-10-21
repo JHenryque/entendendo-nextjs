@@ -1,3 +1,4 @@
+import BotaoRedirect from "@/components/BotaoRedirect";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 export default function TesteSlug({ params }: TestProps) {
   return (
     <>
-      <Link href="/">Voltar</Link>
+      <BotaoRedirect />
       <div>Teste Slug {params.slug} editado</div>
     </>
   );
