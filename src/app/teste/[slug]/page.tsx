@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 type TestProps = {
   params: { slug: number };
@@ -9,5 +10,10 @@ export const metadata: Metadata = {
 };
 
 export default function TesteSlug({ params }: TestProps) {
-  return <div>Teste Slug {params.slug}</div>;
+  return (
+    <>
+      <Link href="/">Voltar</Link>
+      <div>Teste Slug {params.slug} editado</div>
+    </>
+  );
 }
