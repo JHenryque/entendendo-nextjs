@@ -1,13 +1,14 @@
 type itemsProdutoPageProps = {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>;
 };
 
-export default function itemsProdutoPage({ params }: itemsProdutoPageProps) {
+export default async function itemsProdutoPage({
+  params,
+}: itemsProdutoPageProps) {
+  const { slug } = await params;
   return (
     <div>
-      <h1>itemsProduto {params.slug}</h1>
+      <h1>itemsProduto {slug}</h1>
     </div>
   );
 }
